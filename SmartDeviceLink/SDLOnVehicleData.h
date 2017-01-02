@@ -3,21 +3,35 @@
 
 #import "SDLRPCNotification.h"
 
+@class SDLAccPedalPositionType;
 @class SDLAirbagStatus;
+@class SDLAxisSensorDataType;
 @class SDLBeltStatus;
 @class SDLBodyInformation;
 @class SDLClusterModeStatus;
 @class SDLComponentVolumeStatus;
+@class SDLComponentVolumeStatusType;
 @class SDLDeviceStatus;
 @class SDLECallInfo;
 @class SDLEmergencyEvent;
+@class SDLEngineTorqueType;
+@class SDLExternalTemperatureType;
+@class SDLFuelLevelType;
 @class SDLGPSData;
+@class SDLGPSDataType;
 @class SDLHeadLampStatus;
 @class SDLMyKey;
 @class SDLPRNDL;
+@class SDLPRNDLType;
+@class SDLRpmType;
+@class SDLSpeedType;
+@class SDLSteeringWheelAngleType;
 @class SDLTireStatus;
+@class SDLTireStatusType;
 @class SDLVehicleDataEventStatus;
+@class SDLVehicleDataEventStatusType;
 @class SDLWiperStatus;
+@class SDLWheelSpeedsDataType;
 
 
 /**
@@ -46,10 +60,22 @@
  */
 @property (strong) SDLGPSData *gps;
 
+
+/**
+ * @abstract A SDLGPSDataType* value. 
+ * See SDLGPSDataType.
+ */
+@property (strong) NSMutableArray <SDLGPSDataType*> *gpsArray;
+
 /**
  * @abstract The vehicle speed in kilometers per hour.
  */
 @property (strong) NSNumber *speed;
+
+/**
+ * @abstract An array of the vehicle speed in kilometers per hour.
+ */
+@property (strong) NSMutableArray <SDLSpeedType *> *speedArray;
 
 /**
  * @abstract The number of revolutions per minute of the engine.
@@ -57,14 +83,30 @@
 @property (strong) NSNumber *rpm;
 
 /**
+ * @abstract An array of the number of revolutions per minute of
+ * the engine.
+ */
+@property (strong) NSMutableArray <SDLRpmType *> *rpmArray;
+
+/**
  * @abstract The fuel level in the tank (percentage)
  */
 @property (strong) NSNumber *fuelLevel;
 
 /**
+ * @abstract An array of the fuel level in the tank (percentage)
+ */
+@property (strong) NSMutableArray <SDLFuelLevelType *> *fuelLevelArray;
+
+/**
  * @abstract A SDLComponentVolumeStatus* value. The fuel level state.
  */
 @property (strong) SDLComponentVolumeStatus *fuelLevel_State;
+
+/**
+ * @abstract An array of the fuel level state.
+ */
+@property (strong) NSMutableArray <SDLComponentVolumeStatusType *> *fuelLevel_StateArray;
 
 /**
  * @abstract The instantaneous fuel consumption in microlitres.
@@ -77,6 +119,11 @@
 @property (strong) NSNumber *externalTemperature;
 
 /**
+ * @abstract An array of the external temperature in degrees celsius.
+ */
+@property (strong) NSMutableArray <SDLExternalTemperatureType *> *externalTemperatureArray;
+
+/**
  * @abstract The Vehicle Identification Number
  */
 @property (strong) NSString *vin;
@@ -87,9 +134,19 @@
 @property (strong) SDLPRNDL *prndl;
 
 /**
+ * @abstract See PRNDLType.
+ */
+@property (strong) NSMutableArray <SDLPRNDLType *> *prndlArray;
+
+/**
  * @abstract A SDLTireStatus* value. See TireStatus.
  */
 @property (strong) SDLTireStatus *tirePressure;
+
+/**
+ * @abstract A SDLTireStatusType* value. See TireStatusType.
+ */
+@property (strong) NSMutableArray <SDLTireStatusType *> *tirePressureArray;
 
 /**
  * @abstract Odometer reading in km.
@@ -117,6 +174,11 @@
 @property (strong) SDLVehicleDataEventStatus *driverBraking;
 
 /**
+ * @abstract A VehicleDataEventStatusType* value. An array of the status of the brake pedal.
+ */
+@property (strong) NSMutableArray <SDLVehicleDataEventStatusType *> *driverBrakingArray;
+
+/**
  * @abstract A SDLWiperStatus* value. The status of the wipers.
  */
 @property (strong) SDLWiperStatus *wiperStatus;
@@ -132,14 +194,45 @@
 @property (strong) NSNumber *engineTorque;
 
 /**
+ * @abstract An array of torque values for engine (in Nm) on non-diesel variants.
+ */
+@property (strong) NSMutableArray <SDLEngineTorqueType *> *engineTorqueArray;
+
+/**
  * @abstract Accelerator pedal position (percentage depressed)
  */
 @property (strong) NSNumber *accPedalPosition;
 
 /**
+ * @abstract An array of accelerator pedal position (percentage depressed)
+ */
+@property (strong) NSMutableArray <SDLAccPedalPositionType *> *accPedalPositionArray;
+
+/**
  * @abstract Current angle of the steering wheel (in deg)
  */
 @property (strong) NSNumber *steeringWheelAngle;
+
+/**
+ * @abstract An array of the angle of the steering wheel (in deg)
+ */
+@property (strong) NSMutableArray <SDLSteeringWheelAngleType *> *steeringWheelAngleArray;
+
+/**
+ * @abstract An array of accelerometer data.
+ */
+@property (strong) NSMutableArray <SDLAxisSensorDataType *> *accelerometerArray;
+
+/**
+ * @abstract An array of Gyroscope data
+ */
+@property (strong) NSMutableArray <SDLAxisSensorDataType *> *gyroscopeArray;
+
+/**
+ * @abstract An array of Wheel speeds data
+ */
+@property (strong) NSMutableArray <SDLWheelSpeedsDataType *> *wheelSpeedsArray;
+
 @property (strong) SDLECallInfo *eCallInfo;
 @property (strong) SDLAirbagStatus *airbagStatus;
 @property (strong) SDLEmergencyEvent *emergencyEvent;

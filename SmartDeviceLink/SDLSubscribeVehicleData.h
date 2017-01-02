@@ -42,9 +42,19 @@
 @property (strong) NSNumber *gps;
 
 /**
+ * @abstract A boolean value. If true, subscribes Gps data type
+ */
+@property (strong) NSNumber *gpsArray;
+
+/**
  * @abstract A boolean value. If true, subscribes speed data
  */
 @property (strong) NSNumber *speed;
+
+/**
+ * @abstract A boolean value. If true, subscribes speed data type
+ */
+@property (strong) NSNumber *speedArray;
 
 /**
  * @abstract A boolean value. If true, subscribes rpm data
@@ -52,14 +62,29 @@
 @property (strong) NSNumber *rpm;
 
 /**
+ * @abstract A boolean value. If true, subscribes an array of the number of rpm data
+ */
+@property (strong) NSNumber *rpmArray;
+
+/**
  * @abstract A boolean value. If true, subscribes FuelLevel data
  */
 @property (strong) NSNumber *fuelLevel;
 
 /**
+ * @abstract A boolean value. If true, subscribes an array of the  FuelLevel data
+ */
+@property (strong) NSNumber *fuelLevelArray;
+
+/**
  * @abstract A boolean value. If true, subscribes fuelLevel_State data
  */
 @property (strong) NSNumber *fuelLevel_State;
+
+/**
+ * @abstract A boolean value. If true, subscribes an array of the  fuelLevel_State data
+ */
+@property (strong) NSNumber *fuelLevel_StateArray;
 
 /**
  * @abstract A boolean value. If true, subscribes instantFuelConsumption data
@@ -72,14 +97,29 @@
 @property (strong) NSNumber *externalTemperature;
 
 /**
+ * @abstract A boolean value. If true, subscribes an array of the externalTemperature data
+ */
+@property (strong) NSNumber *externalTemperatureArray;
+
+/**
  * @abstract A boolean value. If true, subscribes Currently selected gear data
  */
 @property (strong) NSNumber *prndl;
 
 /**
+ * @abstract A boolean value. If true, subscribes an array of the Currently selected gear data
+ */
+@property (strong) NSNumber *prndlArray;
+
+/**
  * @abstract A boolean value. If true, subscribes tire pressure status data
  */
 @property (strong) NSNumber *tirePressure;
+
+/**
+ * @abstract A boolean value. If true, subscribes an array of the tire pressure status data
+ */
+@property (strong) NSNumber *tirePressureArray;
 
 /**
  * @abstract A boolean value. If true, subscribes odometer data
@@ -107,6 +147,11 @@
 @property (strong) NSNumber *driverBraking;
 
 /**
+ * @abstract A boolean value. If true, subscribes an array of the driver Braking data
+ */
+@property (strong) NSNumber *driverBrakingArray;
+
+/**
  * @abstract A boolean value. If true, subscribes wiper Status data
  */
 @property (strong) NSNumber *wiperStatus;
@@ -122,16 +167,52 @@
 @property (strong) NSNumber *engineTorque;
 
 /**
+ * @abstract A boolean value. If true, subscribes an array of the Engine Torque data
+ */
+@property (strong) NSNumber *engineTorqueArray;
+
+/**
  * @abstract A boolean value. If true, means the accPedalPosition data has been
  * subscribed.
  */
 @property (strong) NSNumber *accPedalPosition;
 
 /**
+ * @abstract A boolean value. If true, means array of the accPedalPosition data has been
+ * subscribed.
+ */
+@property (strong) NSNumber *accPedalPositionArray;
+
+/**
  * @abstract A boolean value. If true, means the steeringWheelAngle data has been
  * subscribed.
  */
 @property (strong) NSNumber *steeringWheelAngle;
+
+/**
+ * @abstract A boolean value. If true, means an array of steeringWheelAngle data has been
+ * subscribed.
+ */
+@property (strong) NSNumber *steeringWheelAngleArray;
+
+/**
+ * @abstract A boolean value. If true, means an array of accelerometer data has been
+ * subscribed.
+ */
+@property (strong) NSNumber *accelerometerArray;
+
+/**
+ * @abstract A boolean value. If true, means an array of gyroscope data has been
+ * subscribed.
+ */
+@property (strong) NSNumber *gyroscopeArray;
+
+/**
+ * @abstract A boolean value. If true, means an array of wheelSpeeds data has been
+ * subscribed.
+ */
+@property (strong) NSNumber *wheelSpeedsArray;
+
 @property (strong) NSNumber *eCallInfo;
 @property (strong) NSNumber *airbagStatus;
 @property (strong) NSNumber *emergencyEvent;

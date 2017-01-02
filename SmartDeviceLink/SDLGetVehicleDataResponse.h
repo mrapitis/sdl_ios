@@ -18,6 +18,8 @@
 @class SDLTireStatus;
 @class SDLVehicleDataEventStatus;
 @class SDLWiperStatus;
+@class SDLAxisSensorData;
+@class SDLWheelSpeedsData;
 
 
 /**
@@ -141,6 +143,22 @@
  * @abstract Current angle of the steering wheel (in deg)
  */
 @property (strong) NSNumber *steeringWheelAngle;
+
+/**
+ * @abstract Accelerometer data.
+ */
+@property (strong) SDLAxisSensorData *accelerometer;
+
+/**
+ * @abstract Gyroscope data.
+ */
+@property (strong) SDLAxisSensorData *gyroscope;
+
+/**
+ * @abstract Wheel speeds data.
+ */
+@property (strong) SDLWheelSpeedsData *wheelSpeeds;
+
 @property (strong) SDLECallInfo *eCallInfo;
 @property (strong) SDLAirbagStatus *airbagStatus;
 @property (strong) SDLEmergencyEvent *emergencyEvent;
