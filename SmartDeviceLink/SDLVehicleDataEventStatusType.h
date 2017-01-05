@@ -2,6 +2,8 @@
 //
 
 #import <SmartDeviceLink/SmartDeviceLink.h>
+@class SDLVehicleDataEventStatus;
+@class SDLTimeStampType;
 
 @interface SDLVehicleDataEventStatusType : SDLRPCStruct
 
@@ -26,6 +28,6 @@
  * @abstract
  *      Timestamp in which VehicleDataEventStatus value was recorded.
  */
-@property (strong) NSNumber *timeStamp;
+@property (strong) SDLTimeStampType *timeStamp;
 
 @end

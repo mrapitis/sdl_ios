@@ -2,6 +2,8 @@
 //
 
 #import <SmartDeviceLink/SmartDeviceLink.h>
+@class SDLComponentVolumeStatus;
+@class SDLTimeStampType;
 
 @interface SDLComponentVolumeStatusType : SDLRPCStruct
 
@@ -26,6 +28,6 @@
  *  @abstract
  *      Timestamp in which the ComponentVolumeStatus value was recorded.
  */
-@property (strong) NSNumber *timeStamp;
+@property (strong) SDLTimeStampType *timeStamp;
 
 @end

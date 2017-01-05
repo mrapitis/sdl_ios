@@ -3,6 +3,7 @@
 
 
 #import <SmartDeviceLink/SmartDeviceLink.h>
+@class SDLTimeStampType;
 
 @interface SDLFuelLevelType : SDLRPCStruct
 
@@ -28,6 +29,6 @@
  *  @abstract
  *      Timestamp in which the fuel level was recorded.
  */
-@property (strong) NSNumber *timeStamp;
+@property (strong) SDLTimeStampType *timeStamp;
 
 @end

@@ -265,6 +265,8 @@
 		1EFAC6BA1E0AA56700609A40 /* SDLWheelSpeedsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFAC6B81E0AA56700609A40 /* SDLWheelSpeedsData.m */; };
 		1EFAC6BD1E0B9EC400609A40 /* SDLWheelSpeedsDataType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EFAC6BB1E0B9EC400609A40 /* SDLWheelSpeedsDataType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EFAC6BE1E0B9EC400609A40 /* SDLWheelSpeedsDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFAC6BC1E0B9EC400609A40 /* SDLWheelSpeedsDataType.m */; };
+		1EFAC6E61E1E16F100609A40 /* SDLTimeStampType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EFAC6E41E1E16F100609A40 /* SDLTimeStampType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EFAC6E71E1E16F100609A40 /* SDLTimeStampType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFAC6E51E1E16F100609A40 /* SDLTimeStampType.m */; };
 		332A914F1CED9CC60043824C /* SDLAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 332A913D1CED87F80043824C /* SDLAppInfo.m */; };
 		332A91501CED9CF10043824C /* SDLAppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 332A913C1CED87F80043824C /* SDLAppInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D0218F61A8E79C400D1BF62 /* ConnectionTCPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0218F51A8E79C400D1BF62 /* ConnectionTCPTableViewController.m */; };
@@ -1317,6 +1319,8 @@
 		1EFAC6B81E0AA56700609A40 /* SDLWheelSpeedsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLWheelSpeedsData.m; sourceTree = "<group>"; };
 		1EFAC6BB1E0B9EC400609A40 /* SDLWheelSpeedsDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLWheelSpeedsDataType.h; sourceTree = "<group>"; };
 		1EFAC6BC1E0B9EC400609A40 /* SDLWheelSpeedsDataType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLWheelSpeedsDataType.m; sourceTree = "<group>"; };
+		1EFAC6E41E1E16F100609A40 /* SDLTimeStampType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLTimeStampType.h; sourceTree = "<group>"; };
+		1EFAC6E51E1E16F100609A40 /* SDLTimeStampType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLTimeStampType.m; sourceTree = "<group>"; };
 		332A913C1CED87F80043824C /* SDLAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLAppInfo.h; sourceTree = "<group>"; };
 		332A913D1CED87F80043824C /* SDLAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLAppInfo.m; sourceTree = "<group>"; };
 		5D0218F41A8E79C400D1BF62 /* ConnectionTCPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConnectionTCPTableViewController.h; path = SmartDeviceLink_Example/Classes/ConnectionTCPTableViewController.h; sourceTree = SOURCE_ROOT; };
@@ -2994,6 +2998,8 @@
 				5D61FBC91A84238B00846EE7 /* SDLSyncMsgVersion.m */,
 				5D61FBDC1A84238C00846EE7 /* SDLTextField.h */,
 				5D61FBDD1A84238C00846EE7 /* SDLTextField.m */,
+				1EFAC6E41E1E16F100609A40 /* SDLTimeStampType.h */,
+				1EFAC6E51E1E16F100609A40 /* SDLTimeStampType.m */,
 				5D61FBE21A84238C00846EE7 /* SDLTireStatus.h */,
 				5D61FBE31A84238C00846EE7 /* SDLTireStatus.m */,
 				1EFAC6A71E0A897700609A40 /* SDLTireStatusType.h */,
@@ -3990,6 +3996,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EFAC6991E0A85E400609A40 /* SDLSteeringWheelAngleType.h in Headers */,
+				1EFAC6E61E1E16F100609A40 /* SDLTimeStampType.h in Headers */,
 				1EFAC6AD1E0A8EBF00609A40 /* SDLVehicleDataEventStatusType.h in Headers */,
 				1EFAC6811E0A77DF00609A40 /* SDLSpeedType.h in Headers */,
 				1EFAC6A91E0A897700609A40 /* SDLTireStatusType.h in Headers */,
@@ -4629,6 +4636,7 @@
 				5D6F7A361BC5B9B60070BF37 /* SDLLockScreenViewController.m in Sources */,
 				5D61FDE81A84238C00846EE7 /* SDLUnsubscribeButton.m in Sources */,
 				5D61FCF71A84238C00846EE7 /* SDLMediaClockFormat.m in Sources */,
+				1EFAC6E71E1E16F100609A40 /* SDLTimeStampType.m in Sources */,
 				5D61FD8A1A84238C00846EE7 /* SDLSetGlobalPropertiesResponse.m in Sources */,
 				5D61FC4C1A84238C00846EE7 /* SDLBeltStatus.m in Sources */,
 				DA9F7E8C1DCC04B000ACAE48 /* SDLSubscribeWaypointsResponse.m in Sources */,

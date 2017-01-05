@@ -1,12 +1,8 @@
-//
 //  SDLRpmType.h
-//  SmartDeviceLink-iOS
-//
-//  Created by CHDSEZ318988DADM on 21/12/16.
-//  Copyright © 2016 smartdevicelink. All rights reserved.
 //
 
 #import <SmartDeviceLink/SmartDeviceLink.h>
+@class SDLTimeStampType;
 
 @interface SDLRpmType : SDLRPCStruct
 
@@ -32,6 +28,6 @@
 *  @abstract
 *      Timestamp in which the RPM was recorded.
 */
-@property (strong) NSNumber *timeStamp;
+@property (strong) SDLTimeStampType *timeStamp;
 
 @end

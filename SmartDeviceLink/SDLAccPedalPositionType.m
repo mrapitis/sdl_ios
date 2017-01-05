@@ -2,6 +2,7 @@
 //
 
 #import "SDLAccPedalPositionType.h"
+#import "SDLTimeStampType.h"
 #import "SDLNames.h"
 
 @implementation SDLAccPedalPositionType
@@ -30,8 +31,7 @@
     return [store objectForKey:NAMES_value];
 }
 
-
-- (void)setTimeStamp:(NSNumber *)timeStamp {
+- (void)setTimeStamp:(SDLTimeStampType *)timeStamp {
     if (timeStamp != nil) {
         [store setObject:timeStamp forKey:NAMES_timeStamp];
     } else {
@@ -39,8 +39,13 @@
     }
 }
 
-- (NSNumber *)timeStamp {
-    return [store objectForKey:NAMES_timeStamp];
+- (SDLTimeStampType *)timeStamp {
+    NSObject *obj = [store objectForKey:NAMES_timeStamp];
+    if (obj == nil || [obj isKindOfClass:SDLTimeStampType.class]) {
+        return (SDLTimeStampType *)obj;
+    } else {
+        return [[SDLTimeStampType alloc] initWithDictionary:(NSMutableDictionary *)obj];
+    }
 }
 
 @end

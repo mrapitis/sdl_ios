@@ -3,6 +3,7 @@
 
 
 #import <SmartDeviceLink/SmartDeviceLink.h>
+@class SDLTimeStampType;
 
 @interface SDLExternalTemperatureType : SDLRPCStruct
 
@@ -28,6 +29,6 @@
  *  @abstract
  *      Timestamp in which the external temperature was recorded.
  */
-@property (strong) NSNumber *timeStamp;
+@property (strong) SDLTimeStampType *timeStamp;
 
 @end

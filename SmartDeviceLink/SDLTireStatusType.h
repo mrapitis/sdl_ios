@@ -2,6 +2,8 @@
 //
 
 #import <SmartDeviceLink/SmartDeviceLink.h>
+@class SDLTireStatus;
+@class SDLTimeStampType;
 
 @interface SDLTireStatusType : SDLRPCStruct
 
@@ -26,6 +28,6 @@
  * @abstract 
  *      Timestamp in which TireStatus value was recorded.
  */
-@property (strong) NSNumber *timeStamp;
+@property (strong) SDLTimeStampType *timeStamp;
 
 @end

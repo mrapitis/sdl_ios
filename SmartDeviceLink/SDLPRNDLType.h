@@ -2,6 +2,8 @@
 //
 
 #import <SmartDeviceLink/SmartDeviceLink.h>
+@class SDLPRNDL;
+@class SDLTimeStampType;
 
 @interface SDLPRNDLType : SDLRPCStruct
 
@@ -26,6 +28,6 @@
  *  @abstract
  *      Timestamp in which the PRNDL value was recorded.
  */
-@property (strong) NSNumber *timeStamp;
+@property (strong) SDLTimeStampType *timeStamp;
 
 @end

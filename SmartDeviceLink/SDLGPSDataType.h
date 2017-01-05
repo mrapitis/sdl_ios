@@ -2,6 +2,8 @@
 //
 
 #import <SmartDeviceLink/SmartDeviceLink.h>
+@class SDLGPSData;
+@class SDLTimeStampType;
 
 @interface SDLGPSDataType : SDLRPCStruct
 
@@ -26,6 +28,6 @@
  *  @abstract
  *      Timestamp in which the GPSData value was recorded.
  */
-@property (strong) NSNumber *timeStamp;
+@property (strong) SDLTimeStampType *timeStamp;
 
 @end

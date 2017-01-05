@@ -219,6 +219,7 @@ FOUNDATION_EXPORT const unsigned char SmartDeviceLinkVersionString[];
 #import "SDLSyncMsgVersion.h"
 #import "SDLTTSChunk.h"
 #import "SDLTextField.h"
+#import "SDLTimeStampType.h"
 #import "SDLTireStatus.h"
 #import "SDLTireStatusType.h"
 #import "SDLTouchCoord.h"

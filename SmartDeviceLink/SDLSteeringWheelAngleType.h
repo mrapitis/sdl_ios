@@ -2,6 +2,7 @@
 //
 
 #import <SmartDeviceLink/SmartDeviceLink.h>
+@class SDLTimeStampType;
 
 @interface SDLSteeringWheelAngleType : SDLRPCStruct
 
@@ -27,6 +28,6 @@
  *  @abstract
  *      Timestamp in which the steering wheel angle was recorded.
  */
-@property (strong) NSNumber *timeStamp;
+@property (strong) SDLTimeStampType *timeStamp;
 
 @end

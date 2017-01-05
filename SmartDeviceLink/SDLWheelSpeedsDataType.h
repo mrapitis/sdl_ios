@@ -2,6 +2,7 @@
 //
 
 #import <SmartDeviceLink/SmartDeviceLink.h>
+@class SDLTimeStampType;
 @class SDLWheelSpeedsData;
 
 @interface SDLWheelSpeedsDataType : SDLRPCStruct
@@ -27,6 +28,6 @@
  * @abstract
  *      Timestamp in which WheelSpeedsData value was recorded.
  */
-@property (strong) NSNumber *timeStamp;
+@property (strong) SDLTimeStampType *timeStamp;
 
 @end

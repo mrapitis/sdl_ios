@@ -2,6 +2,7 @@
 //
 
 #import <SmartDeviceLink/SmartDeviceLink.h>
+@class SDLTimeStampType;
 @class SDLAxisSensorData;
 
 @interface SDLAxisSensorDataType : SDLRPCStruct
@@ -27,6 +28,6 @@
  *  @abstract
  *      Timestamp in which the AccelerometerData value was recorded.
  */
-@property (strong) NSNumber *timeStamp;
+@property (strong) SDLTimeStampType *timeStamp;
 
 @end
