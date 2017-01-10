@@ -30,7 +30,6 @@
 #import "SDLTireStatus.h"
 #import "SDLTireStatusType.h"
 #import "SDLVehicleDataEventStatus.h"
-#import "SDLVehicleDataEventStatusType.h"
 #import "SDLWheelSpeedsDataType.h"
 #import "SDLWiperStatus.h"
 
@@ -366,16 +365,28 @@
     }
 }
 
-- (void)setDriverBrakingArray:(NSMutableArray<SDLVehicleDataEventStatusType *> *)driverBrakingArray {
-    if (driverBrakingArray != nil) {
-        [parameters setObject:driverBrakingArray forKey:NAMES_driverBrakingArray];
+- (void)setFuelRemainingRangeArray:(NSMutableArray<SDLFuelRemainingRangeType *> *)fuelRemainingRangeArray {
+    if (fuelRemainingRangeArray != nil) {
+        [parameters setObject:fuelRemainingRangeArray forKey:NAMES_fuelRemainingRangeArray];
     } else {
-        [parameters removeObjectForKey:NAMES_driverBrakingArray];
+        [parameters removeObjectForKey:NAMES_fuelRemainingRangeArray];
     }
 }
 
-- (NSMutableArray<SDLVehicleDataEventStatusType *>*)driverBrakingArray {
-    return [parameters objectForKey:NAMES_driverBrakingArray];
+- (NSMutableArray<SDLFuelRemainingRangeType *>*)fuelRemainingRangeArray {
+    return [parameters objectForKey:NAMES_fuelRemainingRangeArray];
+}
+
+- (void)setBrakePedalPositionArray:(NSMutableArray<SDLBrakePedalPositionType *> *)brakePedalPositionArray {
+    if (brakePedalPositionArray != nil) {
+        [parameters setObject:brakePedalPositionArray forKey:NAMES_brakePedalPositionArray];
+    } else {
+        [parameters removeObjectForKey:NAMES_brakePedalPositionArray];
+    }
+}
+
+- (NSMutableArray<SDLBrakePedalPositionType *>*)brakePedalPositionArray {
+    return [parameters objectForKey:NAMES_brakePedalPositionArray];
 }
 
 - (void)setWiperStatus:(SDLWiperStatus *)wiperStatus {

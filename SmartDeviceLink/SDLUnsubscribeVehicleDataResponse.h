@@ -137,9 +137,15 @@
 @property (strong) SDLVehicleDataResult *driverBraking;
 
 /**
- * @abstract An array of SDLVehicleDataResult* value. The status of the brake pedal.
+ * @abstract An array of SDLVehicleDataResult* value. The status of vehicle's remaining range.
  */
-@property (strong) SDLVehicleDataResult *driverBrakingArray;
+@property (strong) SDLVehicleDataResult *fuelRemainingRangeArray;
+
+/**
+ * @abstract An array of SDLVehicleDataResult* value. The status of brake pedal position (percentage depressed).
+ */
+@property (strong) SDLVehicleDataResult *brakePedalPositionArray;
+
 /**
  * @abstract A SDLVehicleDataResult* value. The status of the wipers.
  */

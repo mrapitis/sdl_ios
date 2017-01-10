@@ -319,16 +319,28 @@
     return [parameters objectForKey:NAMES_driverBraking];
 }
 
-- (void)setDriverBrakingArray:(NSNumber *)driverBrakingArray {
-    if (driverBrakingArray != nil) {
-        [parameters setObject:driverBrakingArray forKey:NAMES_driverBrakingArray];
+- (void)setFuelRemainingRangeArray:(NSNumber *)fuelRemainingRangeArray {
+    if (fuelRemainingRangeArray != nil) {
+        [parameters setObject:fuelRemainingRangeArray forKey:NAMES_fuelRemainingRangeArray];
     } else {
-        [parameters removeObjectForKey:NAMES_driverBrakingArray];
+        [parameters removeObjectForKey:NAMES_fuelRemainingRangeArray];
     }
 }
 
-- (NSNumber *)driverBrakingArray {
-    return [parameters objectForKey:NAMES_driverBrakingArray];
+- (NSNumber *)fuelRemainingRangeArray {
+    return [parameters objectForKey:NAMES_fuelRemainingRangeArray];
+}
+
+- (void)setBrakePedalPositionArray:(NSNumber *)brakePedalPositionArray {
+    if (brakePedalPositionArray != nil) {
+        [parameters setObject:brakePedalPositionArray forKey:NAMES_brakePedalPositionArray];
+    } else {
+        [parameters removeObjectForKey:NAMES_brakePedalPositionArray];
+    }
+}
+
+- (NSNumber *)brakePedalPositionArray {
+    return [parameters objectForKey:NAMES_brakePedalPositionArray];
 }
 
 - (void)setWiperStatus:(NSNumber *)wiperStatus {

@@ -144,9 +144,14 @@
 @property (strong) NSNumber *driverBraking;
 
 /**
- * @abstract A boolean value. If true, subscribes an array of the driver Braking data
+ * @abstract A boolean value. If true, unsubscribes an array of vehicle's remaining range data
  */
-@property (strong) NSNumber *driverBrakingArray;
+@property (strong) NSNumber *fuelRemainingRangeArray;
+
+/**
+ * @abstract A boolean value. If true, unsubscribes an array of brake pedal position (percentage depressed).
+ */
+@property (strong) NSNumber *brakePedalPositionArray;
 
 /**
  * @abstract A boolean value. If true, unsubscribes wiper Status data

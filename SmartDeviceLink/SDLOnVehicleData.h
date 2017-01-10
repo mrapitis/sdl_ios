@@ -8,6 +8,7 @@
 @class SDLAxisSensorDataType;
 @class SDLBeltStatus;
 @class SDLBodyInformation;
+@class SDLBrakePedalPositionType;
 @class SDLClusterModeStatus;
 @class SDLComponentVolumeStatus;
 @class SDLComponentVolumeStatusType;
@@ -17,6 +18,7 @@
 @class SDLEngineTorqueType;
 @class SDLExternalTemperatureType;
 @class SDLFuelLevelType;
+@class SDLFuelRemainingRangeType;
 @class SDLGPSData;
 @class SDLGPSDataType;
 @class SDLHeadLampStatus;
@@ -29,7 +31,6 @@
 @class SDLTireStatus;
 @class SDLTireStatusType;
 @class SDLVehicleDataEventStatus;
-@class SDLVehicleDataEventStatusType;
 @class SDLWiperStatus;
 @class SDLWheelSpeedsDataType;
 
@@ -173,10 +174,15 @@
  */
 @property (strong) SDLVehicleDataEventStatus *driverBraking;
 
-/**
- * @abstract A VehicleDataEventStatusType* value. An array of the status of the brake pedal.
+ /**
+ * @abstract A SDLFuelRemainingRangeType* value. An array of vehicle's remaining range.
  */
-@property (strong) NSMutableArray <SDLVehicleDataEventStatusType *> *driverBrakingArray;
+@property (strong) NSMutableArray <SDLFuelRemainingRangeType *> *fuelRemainingRangeArray;
+
+/**
+ * @abstract A SDLBrakePedalPositionType* value. An array of brake pedal position (percentage depressed).
+ */
+@property (strong) NSMutableArray <SDLBrakePedalPositionType *> *brakePedalPositionArray;
 
 /**
  * @abstract A SDLWiperStatus* value. The status of the wipers.
