@@ -327,57 +327,6 @@
     return [parameters objectForKey:NAMES_steeringWheelAngle];
 }
 
-- (void)setAccelerometer:(SDLAxisSensorData *)accelerometer {
-    if (accelerometer != nil) {
-        [parameters setObject:accelerometer forKey:NAMES_accelerometer];
-    } else {
-        [parameters removeObjectForKey:NAMES_accelerometer];
-    }
-}
-
-- (SDLAxisSensorData *)accelerometer {
-    NSObject *obj = [parameters objectForKey:NAMES_accelerometer];
-    if (obj == nil || [obj isKindOfClass:SDLAxisSensorData.class]) {
-        return (SDLAxisSensorData *)obj;
-    } else {
-        return [[SDLAxisSensorData alloc] initWithDictionary:(NSMutableDictionary *)obj];
-    }
-}
-
-- (void)setGyroscope:(SDLAxisSensorData *)gyroscope {
-    if (gyroscope != nil) {
-        [parameters setObject:gyroscope forKey:NAMES_gyroscope];
-    } else {
-        [parameters removeObjectForKey:NAMES_gyroscope];
-    }
-}
-
-- (SDLAxisSensorData *)gyroscope {
-    NSObject *obj = [parameters objectForKey:NAMES_gyroscope];
-    if (obj == nil || [obj isKindOfClass:SDLAxisSensorData.class]) {
-        return (SDLAxisSensorData *)obj;
-    } else {
-        return [[SDLAxisSensorData alloc] initWithDictionary:(NSMutableDictionary *)obj];
-    }
-}
-
-- (void)setWheelSpeeds:(SDLWheelSpeedsData *)wheelSpeeds {
-    if (wheelSpeeds != nil) {
-        [parameters setObject:wheelSpeeds forKey:NAMES_wheelSpeeds];
-    } else {
-        [parameters removeObjectForKey:NAMES_wheelSpeeds];
-    }
-}
-
-- (SDLWheelSpeedsData *)wheelSpeeds {
-    NSObject *obj = [parameters objectForKey:NAMES_wheelSpeeds];
-    if (obj == nil || [obj isKindOfClass:SDLAxisSensorData.class]) {
-        return (SDLWheelSpeedsData *)obj;
-    } else {
-        return [[SDLWheelSpeedsData alloc] initWithDictionary:(NSMutableDictionary *)obj];
-    }
-}
-
 - (void)setECallInfo:(SDLECallInfo *)eCallInfo {
     if (eCallInfo != nil) {
         [parameters setObject:eCallInfo forKey:NAMES_eCallInfo];

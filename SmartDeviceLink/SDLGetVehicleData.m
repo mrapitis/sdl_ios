@@ -303,42 +303,6 @@
     }
 }
 
-- (void)setAccelerometer:(NSNumber *)accelerometer {
-    if (accelerometer != nil) {
-        [parameters setObject:accelerometer forKey:NAMES_accelerometer];
-    } else {
-        [parameters removeObjectForKey:NAMES_accelerometer];
-    }
-}
-
-- (NSNumber *)accelerometer {
-    return [parameters objectForKey:NAMES_accelerometer];
-}
-
-- (void)setGyroscope:(NSNumber *)gyroscope {
-    if (gyroscope != nil) {
-        [parameters setObject:gyroscope forKey:NAMES_gyroscope];
-    } else {
-        [parameters removeObjectForKey:NAMES_gyroscope];
-    }
-}
-
-- (NSNumber *)gyroscope {
-    return [parameters objectForKey:NAMES_gyroscope];
-}
-
-- (void)setWheelSpeeds:(NSNumber *)wheelSpeeds {
-    if (wheelSpeeds != nil) {
-        [parameters setObject:wheelSpeeds forKey:NAMES_wheelSpeeds];
-    } else {
-        [parameters removeObjectForKey:NAMES_wheelSpeeds];
-    }
-}
-
-- (NSNumber *)wheelSpeeds {
-    return [parameters objectForKey:NAMES_wheelSpeeds];
-}
-
 - (NSNumber *)eCallInfo {
     return [parameters objectForKey:NAMES_eCallInfo];
 }

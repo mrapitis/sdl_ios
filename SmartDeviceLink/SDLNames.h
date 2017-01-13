@@ -1,7 +1,6 @@
 //  SDLNames.h
 //
 
-#define NAMES_accelerometer @"accelerometer"
 #define NAMES_accelerometerArray @"accelerometerArray"
 #define NAMES_accPedalPosition @"accPedalPosition"
 #define NAMES_accPedalPositionArray @"accPedalPositionArray"
@@ -139,7 +138,6 @@
 #define NAMES_gpsArray @"gpsArray"
 #define NAMES_graphic @"graphic"
 #define NAMES_graphicSupported @"graphicSupported"
-#define NAMES_gyroscope @"gyroscope"
 #define NAMES_gyroscopeArray @"gyroscopeArray"
 #define NAMES_hardware @"hardware"
 #define NAMES_hashID @"hashID"
@@ -451,7 +449,6 @@
 #define NAMES_vrSynonyms @"vrSynonyms"
 #define NAMES_waypoints @"wayPoints"
 #define NAMES_waypointType @"wayPointType"
-#define NAMES_wheelSpeeds @"wheelSpeeds"
 #define NAMES_wheelSpeedsArray @"wheelSpeedsArray"
 #define NAMES_whlRotatFr_No_Cnt @"WhlRotatFr_No_Cnt"
 #define NAMES_whlRotatFl_No_Cnt @"WhlRotatFl_No_Cnt"

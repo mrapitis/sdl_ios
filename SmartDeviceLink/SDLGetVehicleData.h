@@ -131,21 +131,6 @@
  */
 @property (strong) NSNumber *steeringWheelAngle;
 
-/**
- * @abstract A boolean value. If true, requests accelerometer.
- */
-@property (strong) NSNumber *accelerometer;
-
-/**
- * @abstract A boolean value. If true, requests gyroscope.
- */
-@property (strong) NSNumber *gyroscope;
-
-/**
- * @abstract A boolean value. If true, requests wheelSpeeds.
- */
-@property (strong) NSNumber *wheelSpeeds;
-
 @property (strong) NSNumber *eCallInfo;
 @property (strong) NSNumber *airbagStatus;
 @property (strong) NSNumber *emergencyEvent;
