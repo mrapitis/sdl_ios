@@ -267,9 +267,9 @@
 		1EFAC6E71E1E16F100609A40 /* SDLTimeStampType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFAC6E51E1E16F100609A40 /* SDLTimeStampType.m */; };
 		332A914F1CED9CC60043824C /* SDLAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 332A913D1CED87F80043824C /* SDLAppInfo.m */; };
 		332A91501CED9CF10043824C /* SDLAppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 332A913C1CED87F80043824C /* SDLAppInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		332CBA001E24ACDB00AFAF63 /* SDLFuelRemainingRangeType.h in Headers */ = {isa = PBXBuildFile; fileRef = 332CB9FE1E24ACDB00AFAF63 /* SDLFuelRemainingRangeType.h */; };
+		332CBA001E24ACDB00AFAF63 /* SDLFuelRemainingRangeType.h in Headers */ = {isa = PBXBuildFile; fileRef = 332CB9FE1E24ACDB00AFAF63 /* SDLFuelRemainingRangeType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		332CBA011E24ACDB00AFAF63 /* SDLFuelRemainingRangeType.m in Sources */ = {isa = PBXBuildFile; fileRef = 332CB9FF1E24ACDB00AFAF63 /* SDLFuelRemainingRangeType.m */; };
-		332CBA041E24B0D100AFAF63 /* SDLBrakePedalPositionType.h in Headers */ = {isa = PBXBuildFile; fileRef = 332CBA021E24B0D100AFAF63 /* SDLBrakePedalPositionType.h */; };
+		332CBA041E24B0D100AFAF63 /* SDLBrakePedalPositionType.h in Headers */ = {isa = PBXBuildFile; fileRef = 332CBA021E24B0D100AFAF63 /* SDLBrakePedalPositionType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		332CBA051E24B0D100AFAF63 /* SDLBrakePedalPositionType.m in Sources */ = {isa = PBXBuildFile; fileRef = 332CBA031E24B0D100AFAF63 /* SDLBrakePedalPositionType.m */; };
 		5D0218F61A8E79C400D1BF62 /* ConnectionTCPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0218F51A8E79C400D1BF62 /* ConnectionTCPTableViewController.m */; };
 		5D0218F91A8E7A7300D1BF62 /* ConnectionTCPTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0218F71A8E7A7300D1BF62 /* ConnectionTCPTableViewController.storyboard */; };
@@ -4001,8 +4001,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				332CBA041E24B0D100AFAF63 /* SDLBrakePedalPositionType.h in Headers */,
 				1EFAC6991E0A85E400609A40 /* SDLSteeringWheelAngleType.h in Headers */,
 				1EFAC6E61E1E16F100609A40 /* SDLTimeStampType.h in Headers */,
+				332CBA001E24ACDB00AFAF63 /* SDLFuelRemainingRangeType.h in Headers */,
 				1EFAC6811E0A77DF00609A40 /* SDLSpeedType.h in Headers */,
 				1EFAC6A91E0A897700609A40 /* SDLTireStatusType.h in Headers */,
 				1EFAC6B91E0AA56700609A40 /* SDLWheelSpeedsData.h in Headers */,
@@ -4285,7 +4287,6 @@
 				5D61FE131A84238C00846EE7 /* SDLWiperStatus.h in Headers */,
 				5D16545A1D3E7A1600554D93 /* SDLLifecycleManager.h in Headers */,
 				5D61FCBD1A84238C00846EE7 /* SDLHeadLampStatus.h in Headers */,
-				332CBA001E24ACDB00AFAF63 /* SDLFuelRemainingRangeType.h in Headers */,
 				5D61FDC31A84238C00846EE7 /* SDLTBTState.h in Headers */,
 				5D61FD951A84238C00846EE7 /* SDLShowResponse.h in Headers */,
 				5D61FCA31A84238C00846EE7 /* SDLEndAudioPassThru.h in Headers */,
@@ -4332,7 +4333,6 @@
 				5D61FCFC1A84238C00846EE7 /* SDLNames.h in Headers */,
 				DA9F7E8F1DCC04C000ACAE48 /* SDLUnsubscribeWaypointsResponse.h in Headers */,
 				5D61FCFD1A84238C00846EE7 /* SDLObjectWithPriority.h in Headers */,
-				332CBA041E24B0D100AFAF63 /* SDLBrakePedalPositionType.h in Headers */,
 				DAC5726C1D11B4840004288B /* SDLTouchManagerDelegate.h in Headers */,
 				5D61FD3F1A84238C00846EE7 /* SDLPrioritizedObjectCollection.h in Headers */,
 				5D61FCBF1A84238C00846EE7 /* SDLHexUtility.h in Headers */,
