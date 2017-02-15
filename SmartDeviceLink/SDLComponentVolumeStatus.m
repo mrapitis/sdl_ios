@@ -7,6 +7,7 @@
 SDLComponentVolumeStatus *SDLComponentVolumeStatus_UNKNOWN = nil;
 SDLComponentVolumeStatus *SDLComponentVolumeStatus_NORMAL = nil;
 SDLComponentVolumeStatus *SDLComponentVolumeStatus_LOW = nil;
+SDLComponentVolumeStatus *SDLComponentVolumeStatus_VERY_LOW = nil;
 SDLComponentVolumeStatus *SDLComponentVolumeStatus_FAULT = nil;
 SDLComponentVolumeStatus *SDLComponentVolumeStatus_ALERT = nil;
 SDLComponentVolumeStatus *SDLComponentVolumeStatus_NOT_SUPPORTED = nil;
@@ -30,6 +31,7 @@ NSArray *SDLComponentVolumeStatus_values = nil;
             SDLComponentVolumeStatus.UNKNOWN,
             SDLComponentVolumeStatus.NORMAL,
             SDLComponentVolumeStatus.LOW,
+            SDLComponentVolumeStatus.VERY_LOW,
             SDLComponentVolumeStatus.FAULT,
             SDLComponentVolumeStatus.ALERT,
             SDLComponentVolumeStatus.NOT_SUPPORTED,
@@ -57,6 +59,13 @@ NSArray *SDLComponentVolumeStatus_values = nil;
         SDLComponentVolumeStatus_LOW = [[SDLComponentVolumeStatus alloc] initWithValue:@"LOW"];
     }
     return SDLComponentVolumeStatus_LOW;
+}
+
++ (SDLComponentVolumeStatus *)VERY_LOW {
+    if (SDLComponentVolumeStatus_VERY_LOW == nil) {
+        SDLComponentVolumeStatus_VERY_LOW = [[SDLComponentVolumeStatus alloc] initWithValue:@"VERY_LOW"];
+    }
+    return SDLComponentVolumeStatus_VERY_LOW;
 }
 
 + (SDLComponentVolumeStatus *)FAULT {
