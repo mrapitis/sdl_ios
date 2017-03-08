@@ -520,14 +520,14 @@
 
 - (void)setWheelSpeedsArray:(NSMutableArray<SDLWheelSpeedsDataType *>*)wheelSpeedsArray {
     if (wheelSpeedsArray != nil) {
-        [parameters setObject:wheelSpeedsArray forKey:NAMES_steeringWheelAngleArray];
+        [parameters setObject:wheelSpeedsArray forKey:NAMES_wheelSpeedsArray];
     } else {
-        [parameters removeObjectForKey:NAMES_steeringWheelAngleArray];
+        [parameters removeObjectForKey:NAMES_wheelSpeedsArray];
     }
 }
 
 - (NSMutableArray<SDLWheelSpeedsDataType *> *)wheelSpeedsArray {
-    return [parameters objectForKey:NAMES_steeringWheelAngleArray];
+    return [parameters objectForKey:NAMES_wheelSpeedsArray];
 }
 
 - (void)setECallInfo:(SDLECallInfo *)eCallInfo {
