@@ -56,6 +56,23 @@
     }
 }
 
+- (void)setGpsDrArray:(SDLVehicleDataResult *)gpsDrArray {
+    if (gpsDrArray != nil) {
+        [parameters setObject:gpsDrArray forKey:NAMES_gpsDrArray];
+    } else {
+        [parameters removeObjectForKey:NAMES_gpsDrArray];
+    }
+}
+
+- (SDLVehicleDataResult *)gpsDrArray {
+    NSObject *obj = [parameters objectForKey:NAMES_gpsDrArray];
+    if (obj == nil || [obj isKindOfClass:SDLVehicleDataResult.class]) {
+        return (SDLVehicleDataResult *)obj;
+    } else {
+        return [[SDLVehicleDataResult alloc] initWithDictionary:(NSMutableDictionary *)obj];
+    }
+}
+
 - (void)setSpeed:(SDLVehicleDataResult *)speed {
     if (speed != nil) {
         [parameters setObject:speed forKey:NAMES_speed];

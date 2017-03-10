@@ -74,6 +74,18 @@
     }
 }
 
+- (void)setGpsDrArray:(NSNumber *)gpsDrArray {
+    if (gpsDrArray != nil) {
+        [parameters setObject:gpsDrArray forKey:NAMES_gpsDrArray];
+    } else {
+        [parameters removeObjectForKey:NAMES_gpsDrArray];
+    }
+}
+
+- (NSNumber *)gpsDrArray {
+    return [parameters objectForKey:NAMES_gpsDrArray];
+}
+
 - (NSNumber *)gpsArray {
     return [parameters objectForKey:NAMES_gpsArray];
 }

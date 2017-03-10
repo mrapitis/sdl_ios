@@ -136,6 +136,7 @@
 #define NAMES_GetWaypoints @"GetWayPoints"
 #define NAMES_gps @"gps"
 #define NAMES_gpsArray @"gpsArray"
+#define NAMES_gpsDrArray @"gpsDrArray"
 #define NAMES_graphic @"graphic"
 #define NAMES_graphicSupported @"graphicSupported"
 #define NAMES_gyroscopeArray @"gyroscopeArray"

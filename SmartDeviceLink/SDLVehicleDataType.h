@@ -37,6 +37,11 @@
 + (SDLVehicleDataType *)VEHICLEDATA_GPS_ARRAY;
 
 /**
+ * @abstract SDLVehicleDataType: *VEHICLEDATA_GPS_ARRAY*
+ */
++ (SDLVehicleDataType *)VEHICLEDATA_GPS_DR_ARRAY;
+
+/**
  * @abstract SDLVehicleDataType: *VEHICLEDATA_SPEED*
  */
 + (SDLVehicleDataType *)VEHICLEDATA_SPEED;

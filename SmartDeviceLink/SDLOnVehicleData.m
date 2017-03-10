@@ -19,6 +19,7 @@
 #import "SDLFuelLevelType.h"
 #import "SDLGPSData.h"
 #import "SDLGPSDataType.h"
+#import "SDLGPSDrDataType.h"
 #import "SDLHeadLampStatus.h"
 #import "SDLMyKey.h"
 #import "SDLNames.h"
@@ -75,6 +76,18 @@
 
 - (NSMutableArray<SDLGPSDataType *> *)gpsArray {
     return [parameters objectForKey:NAMES_gpsArray];
+}
+
+- (void)setGpsDrArray:(NSMutableArray<SDLGPSDrDataType *> *)gpsDrArray {
+    if (gpsDrArray != nil) {
+        [parameters setObject:gpsDrArray forKey:NAMES_gpsDrArray];
+    } else {
+        [parameters removeObjectForKey:NAMES_gpsDrArray];
+    }
+}
+
+- (NSMutableArray<SDLGPSDrDataType *> *)gpsDrArray {
+    return [parameters objectForKey:NAMES_gpsDrArray];
 }
 
 - (void)setSpeed:(NSNumber *)speed {

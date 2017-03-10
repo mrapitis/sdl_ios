@@ -42,9 +42,14 @@
 @property (strong) NSNumber *gps;
 
 /**
- * @abstract A boolean value. If true, subscribes Gps data type
+ * @abstract A boolean value. If true, subscribes GPS data type
  */
 @property (strong) NSNumber *gpsArray;
+
+/**
+ * @abstract A boolean value. If true, subscribes Gps Dr data type
+ */
+@property (strong) NSNumber *gpsDrArray;
 
 /**
  * @abstract A boolean value. If true, subscribes speed data

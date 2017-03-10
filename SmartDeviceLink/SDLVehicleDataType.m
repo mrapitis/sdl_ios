@@ -6,6 +6,7 @@
 
 SDLVehicleDataType *SDLVehicleDataType_VEHICLEDATA_GPS = nil;
 SDLVehicleDataType *SDLVehicleDataType_VEHICLEDATA_GPS_ARRAY = nil;
+SDLVehicleDataType *SDLVehicleDataType_VEHICLEDATA_GPS_DR_ARRAY = nil;
 SDLVehicleDataType *SDLVehicleDataType_VEHICLEDATA_SPEED = nil;
 SDLVehicleDataType *SDLVehicleDataType_VEHICLEDATA_SPEED_ARRAY = nil;
 SDLVehicleDataType *SDLVehicleDataType_VEHICLEDATA_RPM = nil;
@@ -66,6 +67,7 @@ NSArray *SDLVehicleDataType_values = nil;
         SDLVehicleDataType_values = @[
             SDLVehicleDataType.VEHICLEDATA_GPS,
             SDLVehicleDataType.VEHICLEDATA_GPS_ARRAY,
+            SDLVehicleDataType_VEHICLEDATA_GPS_DR_ARRAY,
             SDLVehicleDataType.VEHICLEDATA_SPEED,
             SDLVehicleDataType.VEHICLEDATA_SPEED_ARRAY,
             SDLVehicleDataType.VEHICLEDATA_RPM,
@@ -123,6 +125,13 @@ NSArray *SDLVehicleDataType_values = nil;
         SDLVehicleDataType_VEHICLEDATA_GPS_ARRAY = [[SDLVehicleDataType alloc] initWithValue:@"VEHICLEDATA_GPS_ARRAY"];
     }
     return SDLVehicleDataType_VEHICLEDATA_GPS_ARRAY;
+}
+
++ (SDLVehicleDataType *)VEHICLEDATA_GPS_DR_ARRAY {
+    if (SDLVehicleDataType_VEHICLEDATA_GPS_DR_ARRAY == nil) {
+        SDLVehicleDataType_VEHICLEDATA_GPS_DR_ARRAY = [[SDLVehicleDataType alloc] initWithValue:@"VEHICLEDATA_GPS_DR_ARRAY"];
+    }
+    return SDLVehicleDataType_VEHICLEDATA_GPS_DR_ARRAY;
 }
 
 + (SDLVehicleDataType *)VEHICLEDATA_SPEED {

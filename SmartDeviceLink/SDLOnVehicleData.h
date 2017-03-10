@@ -21,6 +21,7 @@
 @class SDLFuelRemainingRangeType;
 @class SDLGPSData;
 @class SDLGPSDataType;
+@class SDLGPSDrDataType;
 @class SDLHeadLampStatus;
 @class SDLMyKey;
 @class SDLPRNDL;
@@ -61,12 +62,17 @@
  */
 @property (strong) SDLGPSData *gps;
 
-
 /**
- * @abstract A SDLGPSDataType* value. 
+ * @abstract An array of SDLGPSDataType* type.
  * See SDLGPSDataType.
  */
 @property (strong) NSMutableArray <SDLGPSDataType*> *gpsArray;
+
+/**
+ * @abstract An array of SDLGPSDrDataType* type.
+ * See SDLGPSDrDataType.
+ */
+@property (strong) NSMutableArray <SDLGPSDrDataType*> *gpsDrArray;
 
 /**
  * @abstract The vehicle speed in kilometers per hour.

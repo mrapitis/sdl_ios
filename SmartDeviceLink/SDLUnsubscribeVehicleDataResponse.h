@@ -37,6 +37,11 @@
 @property (strong) SDLVehicleDataResult *gpsArray;
 
 /**
+ * @abstract An array of SDLVehicleDataResult* value. See SDLGPSDrDataType.
+ */
+@property (strong) SDLVehicleDataResult *gpsDrArray;
+
+/**
  * @abstract A SDLVehicleDataResult* value. The vehicle speed in kilometers per hour.
  */
 @property (strong) SDLVehicleDataResult *speed;

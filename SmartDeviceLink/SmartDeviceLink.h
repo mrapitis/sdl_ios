@@ -197,6 +197,8 @@ FOUNDATION_EXPORT const unsigned char SmartDeviceLinkVersionString[];
 #import "SDLFuelRemainingRangeType.h"
 #import "SDLGPSData.h"
 #import "SDLGPSDataType.h"
+#import "SDLGPSDrData.h"
+#import "SDLGPSDrDataType.h"
 #import "SDLHMICapabilities.h"
 #import "SDLHMIPermissions.h"
 #import "SDLHeadLampStatus.h"
