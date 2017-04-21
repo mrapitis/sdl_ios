@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1E2222291EAA190900CBF23C /* Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1E22222C1EAA190900CBF23C /* Build configuration list for PBXAggregateTarget "Universal" */;
+			buildPhases = (
+				1E22222D1EAA191000CBF23C /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Universal;
+			productName = Universal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		162E82CA1A9BDE8A00906325 /* SDLAmbientLightStatusSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 162E81E21A9BDE8A00906325 /* SDLAmbientLightStatusSpec.m */; };
 		162E82CB1A9BDE8A00906325 /* SDLAppHMITypeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 162E81E31A9BDE8A00906325 /* SDLAppHMITypeSpec.m */; };
@@ -233,9 +247,9 @@
 		1680B11C1A9CD7AD00DBD79E /* SDLProtocolMessageAssemblerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1680B1101A9CD7AD00DBD79E /* SDLProtocolMessageAssemblerSpec.m */; };
 		1680B11D1A9CD7AD00DBD79E /* SDLProtocolMessageDisassemblerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1680B1111A9CD7AD00DBD79E /* SDLProtocolMessageDisassemblerSpec.m */; };
 		1680B11E1A9CD7AD00DBD79E /* SDLProtocolReceivedMessageRouterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1680B1121A9CD7AD00DBD79E /* SDLProtocolReceivedMessageRouterSpec.m */; };
-		1E1CEC011E72720B00BF6900 /* SDLGPSDrData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E1CEBFF1E72720B00BF6900 /* SDLGPSDrData.h */; };
+		1E1CEC011E72720B00BF6900 /* SDLGPSDrData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E1CEBFF1E72720B00BF6900 /* SDLGPSDrData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E1CEC021E72720B00BF6900 /* SDLGPSDrData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CEC001E72720B00BF6900 /* SDLGPSDrData.m */; };
-		1E1CEC051E727B3900BF6900 /* SDLGPSDrDataType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E1CEC031E727B3900BF6900 /* SDLGPSDrDataType.h */; };
+		1E1CEC051E727B3900BF6900 /* SDLGPSDrDataType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E1CEC031E727B3900BF6900 /* SDLGPSDrDataType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E1CEC061E727B3900BF6900 /* SDLGPSDrDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CEC041E727B3900BF6900 /* SDLGPSDrDataType.m */; };
 		1EFAC6811E0A77DF00609A40 /* SDLSpeedType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EFAC67F1E0A77DF00609A40 /* SDLSpeedType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EFAC6821E0A77DF00609A40 /* SDLSpeedType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFAC6801E0A77DF00609A40 /* SDLSpeedType.m */; };
@@ -4013,6 +4027,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E1CEC051E727B3900BF6900 /* SDLGPSDrDataType.h in Headers */,
+				1E1CEC011E72720B00BF6900 /* SDLGPSDrData.h in Headers */,
 				332CBA041E24B0D100AFAF63 /* SDLBrakePedalPositionType.h in Headers */,
 				1EFAC6991E0A85E400609A40 /* SDLSteeringWheelAngleType.h in Headers */,
 				1EFAC6E61E1E16F100609A40 /* SDLTimeStampType.h in Headers */,
@@ -4190,7 +4206,6 @@
 				5D61FD3D1A84238C00846EE7 /* SDLPrimaryAudioSource.h in Headers */,
 				DAC5725C1D10B81E0004288B /* SDLTouch.h in Headers */,
 				5D6F7A2E1BC5650B0070BF37 /* SDLLifecycleConfiguration.h in Headers */,
-				1E1CEC011E72720B00BF6900 /* SDLGPSDrData.h in Headers */,
 				5D61FCCD1A84238C00846EE7 /* SDLImage.h in Headers */,
 				5D61FD481A84238C00846EE7 /* SDLProtocolMessage.h in Headers */,
 				5D1665CD1CF8CA8A00CC4CA1 /* SDLPermissionConstants.h in Headers */,
@@ -4332,7 +4347,6 @@
 				5D8B174F1AC9D266006A6E1C /* SDLDialNumber.h in Headers */,
 				5D7F87EF1CE3C294002DD7C4 /* SDLFileManagerConstants.h in Headers */,
 				5D61FCAD1A84238C00846EE7 /* SDLFunctionID.h in Headers */,
-				1E1CEC051E727B3900BF6900 /* SDLGPSDrDataType.h in Headers */,
 				DA9F7E831DCC047200ACAE48 /* SDLWaypointType.h in Headers */,
 				5D61FDF51A84238C00846EE7 /* SDLV1ProtocolHeader.h in Headers */,
 				DAC572671D10C5640004288B /* CGPoint_Util.h in Headers */,
@@ -4430,6 +4444,11 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = smartdevicelink;
 				TargetAttributes = {
+					1E2222291EAA190900CBF23C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3T2LPETG46;
+						ProvisioningStyle = Automatic;
+					};
 					5D4019AE1A76EC350006B0C2 = {
 						CreatedOnToolsVersion = 6.1.1;
 						SystemCapabilities = {
@@ -4446,6 +4465,7 @@
 					};
 					5D61FA251A84237100846EE7 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -4465,6 +4485,7 @@
 				5D4019AE1A76EC350006B0C2 /* SmartDeviceLink-Example */,
 				5D61FA1B1A84237100846EE7 /* SmartDeviceLink */,
 				5D61FA251A84237100846EE7 /* SmartDeviceLinkTests */,
+				1E2222291EAA190900CBF23C /* Universal */,
 			);
 		};
 /* End PBXProject section */
@@ -4526,6 +4547,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E22222D1EAA191000CBF23C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# Clear the aggregate folder\nrm -rf \"${PROJECT_DIR}/aggregate\"\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\nFRAMEWORK_NAME=\"SmartDeviceLink\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${FRAMEWORK_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\nmkdir -p \"${PROJECT_DIR}/aggregate\"\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework\" \"${PROJECT_DIR}/aggregate/${FRAMEWORK_NAME}.framework\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}/aggregate\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D4019AB1A76EC350006B0C2 /* Sources */ = {
@@ -5233,6 +5270,22 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1E22222A1EAA190900CBF23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3T2LPETG46;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E22222B1EAA190900CBF23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3T2LPETG46;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		5D4019D01A76EC350006B0C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -5276,6 +5329,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -5315,6 +5369,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -5324,6 +5379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/SmartDeviceLink_Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -5337,6 +5393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/SmartDeviceLink_Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -5482,6 +5539,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1E22222C1EAA190900CBF23C /* Build configuration list for PBXAggregateTarget "Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E22222A1EAA190900CBF23C /* Debug */,
+				1E22222B1EAA190900CBF23C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5D4019AA1A76EC350006B0C2 /* Build configuration list for PBXProject "SmartDeviceLink-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

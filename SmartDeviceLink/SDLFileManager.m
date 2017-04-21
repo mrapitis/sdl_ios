@@ -40,7 +40,7 @@ SDLFileManagerState *const SDLFileManagerStateStartupError = @"StartupError";
 @property (weak, nonatomic) id<SDLConnectionManagerType> connectionManager;
 
 // Remote state
-@property (copy, nonatomic, readwrite) NSMutableSet<SDLFileName *> *mutableRemoteFileNames;
+@property (strong, nonatomic, readwrite) NSMutableSet<SDLFileName *> *mutableRemoteFileNames;
 @property (assign, nonatomic, readwrite) NSUInteger bytesAvailable;
 
 // Local state
@@ -221,12 +221,17 @@ SDLFileManagerState *const SDLFileManagerStateStartupError = @"StartupError";
 
 - (void)uploadFile:(SDLFile *)file completionHandler:(nullable SDLFileManagerUploadCompletionHandler)handler {
     if (file == nil) {
-        handler(NO, self.bytesAvailable, [NSError sdl_fileManager_unableToUploadError]);
+        if (handler != nil) {
+            handler(NO, self.bytesAvailable, [NSError sdl_fileManager_unableToUploadError]);
+        }
+        return;
     }
 
     // Make sure we are able to send files
     if (![self.currentState isEqualToString:SDLFileManagerStateReady]) {
-        handler(NO, self.bytesAvailable, [NSError sdl_fileManager_unableToUploadError]);
+        if (handler != nil) {
+            handler(NO, self.bytesAvailable, [NSError sdl_fileManager_unableToUploadError]);
+        }
         return;
     }
 
