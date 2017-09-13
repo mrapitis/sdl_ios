@@ -6,7 +6,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SDLTimer ()
+@interface SDLTimer () <SDLTimerTargetDelegate>
 
 @property (strong, nonatomic, nullable) NSTimer *timer;
 @property (assign, nonatomic) BOOL timerRunning;
