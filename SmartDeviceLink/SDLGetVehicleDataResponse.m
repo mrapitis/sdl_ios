@@ -3,7 +3,7 @@
 
 
 #import "SDLGetVehicleDataResponse.h"
-
+#import "SDLAxisSensorData.h"
 #import "SDLAirbagStatus.h"
 #import "SDLBeltStatus.h"
 #import "SDLBodyInformation.h"
@@ -19,6 +19,7 @@
 #import "SDLPRNDL.h"
 #import "SDLTireStatus.h"
 #import "SDLVehicleDataEventStatus.h"
+#import "SDLWheelSpeedsData.h"
 #import "SDLWiperStatus.h"
 
 

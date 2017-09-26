@@ -122,16 +122,15 @@
 @property (strong) NSNumber *engineTorque;
 
 /**
- * @abstract A boolean value. If true, means the accPedalPosition data has been
- * subscribed.
+ * @abstract A boolean value. If true, requests accPedalPosition.
  */
 @property (strong) NSNumber *accPedalPosition;
 
 /**
- * @abstract A boolean value. If true, means the steeringWheelAngle data has been
- * subscribed.
+ * @abstract A boolean value. If true, mrequests steeringWheelAngle.
  */
 @property (strong) NSNumber *steeringWheelAngle;
+
 @property (strong) NSNumber *eCallInfo;
 @property (strong) NSNumber *airbagStatus;
 @property (strong) NSNumber *emergencyEvent;

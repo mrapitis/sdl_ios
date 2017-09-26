@@ -39,9 +39,24 @@
 @property (strong) NSNumber *gps;
 
 /**
+ * @abstract A boolean value. If true, unsubscribes Gps data type
+ */
+@property (strong) NSNumber *gpsArray;
+
+/**
+ * @abstract A boolean value. If true, subscribes Gps data type
+ */
+@property (strong) NSNumber *gpsDrArray;
+
+/**
  * @abstract A boolean value. If true, unsubscribes speed data
  */
 @property (strong) NSNumber *speed;
+
+/**
+ * @abstract A boolean value. If true, unsubscribes speed data type
+ */
+@property (strong) NSNumber *speedArray;
 
 /**
  * @abstract A boolean value. If true, unsubscribe data
@@ -49,14 +64,29 @@
 @property (strong) NSNumber *rpm;
 
 /**
+ * @abstract A boolean value. If true, subscribes an array of the number of rpm data
+ */
+@property (strong) NSNumber *rpmArray;
+
+/**
  * @abstract A boolean value. If true, unsubscribes FuelLevel data
  */
 @property (strong) NSNumber *fuelLevel;
 
 /**
+ * @abstract A boolean value. If true, subscribes an array of the  FuelLevel data
+ */
+@property (strong) NSNumber *fuelLevelArray;
+
+/**
  * @abstract A boolean value. If true, unsubscribes fuelLevel_State data
  */
 @property (strong) NSNumber *fuelLevel_State;
+
+/**
+ * @abstract A boolean value. If true, subscribes an array of the  fuelLevel_State data
+ */
+@property (strong) NSNumber *fuelLevel_StateArray;
 
 /**
  * @abstract A boolean value. If true, unsubscribes instantFuelConsumption data
@@ -69,14 +99,29 @@
 @property (strong) NSNumber *externalTemperature;
 
 /**
+ * @abstract A boolean value. If true, subscribes an array of the externalTemperature data
+ */
+@property (strong) NSNumber *externalTemperatureArray;
+
+/**
  * @abstract A boolean value. If true, unsubscribes Currently selected gear data
  */
 @property (strong) NSNumber *prndl;
 
 /**
+ * @abstract A boolean value. If true, subscribes an array of the Currently selected gear data
+ */
+@property (strong) NSNumber *prndlArray;
+
+/**
  * @abstract A boolean value. If true, unsubscribes tire pressure status data
  */
 @property (strong) NSNumber *tirePressure;
+
+/**
+ * @abstract A boolean value. If true, subscribes an array of the tire pressure status data
+ */
+@property (strong) NSNumber *tirePressureArray;
 
 /**
  * @abstract A boolean value. If true, unsubscribes odometer data
@@ -104,6 +149,16 @@
 @property (strong) NSNumber *driverBraking;
 
 /**
+ * @abstract A boolean value. If true, unsubscribes an array of vehicle's remaining range data
+ */
+@property (strong) NSNumber *fuelRemainingRangeArray;
+
+/**
+ * @abstract A boolean value. If true, unsubscribes an array of brake pedal position (percentage depressed).
+ */
+@property (strong) NSNumber *brakePedalPositionArray;
+
+/**
  * @abstract A boolean value. If true, unsubscribes wiper Status data
  */
 @property (strong) NSNumber *wiperStatus;
@@ -119,9 +174,45 @@
 @property (strong) NSNumber *engineTorque;
 
 /**
+ * @abstract A boolean value. If true, subscribes an array of the Engine Torque data
+ */
+@property (strong) NSNumber *engineTorqueArray;
+
+/**
  * @abstract A boolean value. If true, unsubscribes accPedalPosition data
  */
 @property (strong) NSNumber *accPedalPosition;
+
+/**
+ * @abstract A boolean value. If true, means array of the accPedalPosition data has been
+ * subscribed.
+ */
+@property (strong) NSNumber *accPedalPositionArray;
+
+/**
+ * @abstract A boolean value. If true, means an array of steeringWheelAngle data has been
+ * subscribed.
+ */
+@property (strong) NSNumber *steeringWheelAngleArray;
+
+/**
+ * @abstract A boolean value. If true, means an array of accelerometer data has been
+ * subscribed.
+ */
+@property (strong) NSNumber *accelerometerArray;
+
+/**
+ * @abstract A boolean value. If true, means an array of gyroscope data has been
+ * subscribed.
+ */
+@property (strong) NSNumber *gyroscopeArray;
+
+/**
+ * @abstract A boolean value. If true, means an array of wheelSpeeds data has been
+ * subscribed.
+ */
+@property (strong) NSNumber *wheelSpeedsArray;
+
 @property (strong) NSNumber *steeringWheelAngle;
 @property (strong) NSNumber *eCallInfo;
 @property (strong) NSNumber *airbagStatus;

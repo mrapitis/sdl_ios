@@ -44,6 +44,12 @@
 + (SDLComponentVolumeStatus *)LOW;
 
 /**
+ * @abstract Not supported SDLComponentVolumeStatus
+ * @return a SDLComponentVolumeStatus with the value of *VERY_LOW*
+ */
++ (SDLComponentVolumeStatus *)VERY_LOW;
+
+/**
  * @abstract Fault SDLComponentVolumeStatus
  * @return a SDLComponentVolumeStatus with the value of *FAULT*
  */
