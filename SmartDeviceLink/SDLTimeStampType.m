@@ -33,14 +33,14 @@
 
 - (void)setMicroSecond:(NSNumber *)microSecond {
     if (microSecond != nil) {
-        [store setObject:microSecond forKey:NAMES_second];
+        [store setObject:microSecond forKey:NAMES_microSecond];
     } else {
-        [store removeObjectForKey:NAMES_second];
+        [store removeObjectForKey:NAMES_microSecond];
     }
 }
 
 - (NSNumber *)microSecond {
-    return [store objectForKey:NAMES_second];
+    return [store objectForKey:NAMES_microSecond];
 
 }
 
